@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    PRINT.CSS
+\*------------------------------------*/
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .navbar {
+    display: none;
+  }
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+  .label {
+    border: 1px solid #000;
+  }
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  * {
+    font-family: 'Arial', Helvetica, sans-serif;
+  }
+  .breadcrumb {
+    padding-left: 0px;
+    list-style: none;
+    font-size: 12px;
+  }
+  .breadcrumb > li {
+    display: inline-block;
+  }
+  .breadcrumb > li + li:before {
+    content: " / ";
+    padding: 0 2px;
+  }
+  .configurator__preview {
+    float: left;
+  }
+  .configurator__preview__body {
+    width: 820px;
+    float: left;
+  }
+  .configurator__preview__body img {
+    width: 280px;
+  }
+  .configurator__preview__body .col-xs-12.col-md-6 {
+    float: left;
+    width: 40%;
+    padding-right: 10px;
+  }
+  .configurator__preview__body .row {
+    float: left;
+    width: 100%;
+    padding: 2%;
+    border-bottom: 1px solid black;
+  }
+  .configurator__preview__body .col-xs-6 {
+    float: left;
+    width: 40%;
+    padding-right: 10%;
+    display: block;
+  }
+  .configurator__preview__body .configurator__imagewarning {
+    float: left;
+    padding: 2%;
+    font-style: italic;
+    font-size: 12px;
+  }
+  .configurator__preview__footer {
+    float: left;
+  }
+  .configurator__preview__footer h1,
+  .configurator__preview__footer h2,
+  .configurator__preview__footer h3,
+  .configurator__preview__footer h4,
+  .configurator__preview__footer h5 {
+    font-family: "GillSans", Arial, sans-serif;
+  }
+  .box__title,
+  .steps__nav,
+  .configurator__step--1,
+  .configurator__step--2,
+  .configurator__prev-step,
+  .form-information-request,
+  .page-navigation,
+  .main-footer,
+  .cookies-overlay,
+  .landing2--features__icon,
+  .landing2--footer {
+    display: none!important;
+  }
+  .layout:before {
+    content: url(../images/logo_iveco.png) !important;
+  }
+  img.landing2--masthead__logo {
+    max-width: 210px!important;
+    padding: 20px 0;
+  }
+  .box__title img {
+    display: none;
+  }
+  .social-share {
+    display: none;
+  }
+  .box__title:before {
+    border-color: transparent;
+  }
+  .page-navigation__main-menu > li.active > a:before {
+    border-color: transparent;
+  }
+  .equal-height-row {
+    display: block !important;
+    page-break-inside: avoid;
+  }
+  .equal-height-row .equal-height-box {
+    margin-bottom: inherit !important;
+    padding-bottom: inherit !important;
+    page-break-inside: avoid;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+}

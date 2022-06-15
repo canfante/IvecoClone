@@ -1,0 +1,237 @@
+
+%header.main-header.navbar.navbar-default
+  .main-header__logo.navbar-header
+    .container
+      .main-header__logo-inner.logo-inner-home
+        %img{src: "/common/Style Library/RWDIveco/images/logo_iveco.png", title: "Iveco"}/
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-header__interaction-area", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar.top-bar
+        %span.icon-bar.middle-bar
+        %span.icon-bar.bottom-bar
+  #main-header__interaction-area.main-header__interaction-area.collapse.navbar-collapse
+    .main-header__search{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+      .container
+        .main-header__search-form
+          .main-header__search-form-inner
+            %input#searchBox{onkeypress: "searchKeyPress(event,'/pages/SearchResult.aspx','https://www.iveco.com/turkey','NewIvecoSite');", placeholder: "IVECO'da ara\r\n", type: "text"}/
+            %a#searchButton{href: "javascript:Search('/pages/SearchResult.aspx','https://www.iveco.com/turkey','NewIvecoSite');"} Search
+    .main-header__navigation
+      %ul.main-header__nav-type
+        %li
+          %a{href: "#"} Sizin için Iveco
+        %li.active
+          %a{href: "#"} Menü
+      .main-header__nav-content
+        .main-header__tools-navigation.main-nav.noindex
+          %nav
+            %ul.first-level-menu
+              %li.has-sub-menu
+                %a{href: "javascript:void(0)"} KONFIGÜRATÖR
+                .sub-menu-wrap
+                  .sub-menu-inner
+                    %ul.second-level-menu
+                      %li
+                        %a{href: "/Turkey/Pages/ConfiguratorPage.aspx?vehicle=Daily"}
+                          %span New Daily
+                      %li
+                        %a{href: "/Turkey/Pages/ConfiguratorPage.aspx?vehicle=Eurocargo"}
+                          %span Eurocargo
+                      %li
+                        %a{href: "/Turkey/Pages/ConfiguratorPage.aspx?vehicle=S-Way"}
+                          %span IVECO S-Way
+              %li.has-sub-menu.price-list
+                %a{href: "javascript:void(0)"} FIYAT LISTESI
+                .sub-menu-wrap
+                  .sub-menu-inner
+                    %ul.second-level-menu
+                      %li
+                        %a{href: "http://www.iveco.com/turkey/Documents/PriceList/Fiyat%20Listesi.pdf", rel: "nofollow", target: "_blank"}
+                          %span TAVSIYE EDILEN FIYAT LISTESI
+                      %li
+                        %a{href: "http://www.iveco.com/turkey/Documents/PriceList/Kamu%20Listesi.pdf", rel: "nofollow", target: "_blank"}
+                          %span KAMU ARAÇLARI
+              %li
+                %a{href: "/turkey/kampanyalar/Pages/HomePage.aspx", target: "_self"} KAMPANYALAR
+              %li
+                %a{href: "/turkey/Pages/bize-ula%C5%9Fin.aspx", target: "_self"} BİZE ULAŞIN
+        .main-header__main-navigation.main-nav.active.noindex{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          %nav
+            %ul.first-level-menu
+              %li.has-sub-menu
+                %a{href: "#", title: ""} ÜRÜN BİLGİLERİ
+                .sub-menu-wrap
+                  .sub-menu-inner
+                    %ul.second-level-menu
+                      %li.has-sub-menu.hover
+                        %a{href: "#", title: "YOL ARACI"} YOL ARACI
+                        .third-level-menu-wrap
+                          %ul.third-level-menu
+                            %li
+                              %span.category Hafif (3,5-7 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-daily-van-22.aspx", title: "Daily Panelvan"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/van-daily2022-iveco-menu.jpg"}/
+                                    .txt-wrap Daily Panelvan
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-daily-cab-22.aspx", title: "Daily MY22 Şasi Kamyonet"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/cab-daily2022-iveco-menu.jpg"}/
+                                    .txt-wrap Daily Şasi Kamyonet
+                                %li
+                                  %a{href: "/turkey/urunler/pages/daily-blue-power-my19.aspx", title: "Daily Blue Power"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/thumbdailybp2019.png"}/
+                                    .txt-wrap Daily Blue Power
+                            %li
+                              %span.category Orta Sinif (10-18 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/new-eurocargo-iveco.aspx", title: "Eurocargo"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/eurocargo.jpg"}/
+                                    .txt-wrap Eurocargo
+                            %li
+                              %span.category Ağir Vasita (&gt;=16 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-s-way-22.aspx", title: "IVECO S-WAY"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/iveco_s-way_my2022_diesel_thumb_new3.jpg"}/
+                                    .txt-wrap IVECO S-WAY
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-s-way-22-dogal-gazli.aspx", title: "IVECO S-WAY NP"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/iveco_s-way_my2022_gas_thumb.jpg"}/
+                                    .txt-wrap IVECO S-WAY NP
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-x-way.aspx", title: "x-way-turkey"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/empty-pixel.png"}/
+                                    .txt-wrap
+                                      %p.xway-turkey{style: "display:none;"} X-WAY
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-t-way-drive-the-new-way.aspx", title: "t-way-turkey"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/empty-pixel.png"}/
+                                    .txt-wrap
+                                      %p.tway-turkey{style: "display:none;"} X-WAY
+                          .actions
+                            %div
+                              %a{href: "/turkey/pages/ConfiguratorPage.aspx"}
+                                %img{src: "/common/publishingimages/label-icons/icon-glass.png"}/
+                                %span.actions-title Yapılandırıcı
+                                %span Araç ara. Özelleştir.
+                            %div
+                              %a{href: "/turkey/Pages/stockavailabilitypage.aspx"}
+                                %img{src: "/common/publishingimages/label-icons/icon-key.png"}/
+                                %span.actions-title Stok Durumu
+                                %span İstediğiniz aracın stoklarda bulunup bulunmadığına bakın.
+                      %li.has-sub-menu
+                        %a{href: "#", title: "HAFİF OF ROAD"} HAFİF OF ROAD
+                        .third-level-menu-wrap
+                          %ul.third-level-menu
+                            %li
+                              %span.category Ağir Vasita (&gt;=18 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-x-way.aspx", title: "IVECO X-WAY"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/iveco_xway_thumb.jpg"}/
+                                    .txt-wrap X-WAY
+                      %li.has-sub-menu
+                        %a{href: "#", title: "ARAZİ ARACI"} ARAZİ ARACI
+                        .third-level-menu-wrap
+                          %ul.third-level-menu
+                            %li
+                              %span.category Hafif (3,5-5,5 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/yeni-daily-4x4.aspx", title: "Daily 4x4"}
+                                    .thumb-wrap
+                                      %img{src: "/common/publishingimages/2019daily4x4/daily_4x4_thumb.jpg"}/
+                                    .txt-wrap Daily 4x4
+                            %li
+                              %span.category Orta Sinif (11.5-15.0 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/4x4-eurocargo.aspx", title: "Eurocargo 4x4 "}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/eurocargo-4x4-iveco-menu.jpg"}/
+                                    .txt-wrap Eurocargo 4x4
+                            %li
+                              %span.category Agir Vasita (&gt;18 T)
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/turkey/urunler/pages/iveco-t-way-drive-the-new-way.aspx", title: "IVECO T-WAY"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/menu/iveco_tway_thumb.png"}/
+                                    .txt-wrap IVECO T-WAY
+                                %li
+                                  %a{href: "http://www.iveco-astra.com/tr/", target: "_blank", title: "Astra"}
+                                    .thumb-wrap
+                                      %img{src: "/turkey/publishingimages/iconahd9.jpg"}/
+                                    .txt-wrap Astra
+                          .actions
+                            %div
+                              %a{href: "/turkey/pages/ConfiguratorPage.aspx"}
+                                %img{src: "/common/publishingimages/label-icons/icon-glass.png"}/
+                                %span.actions-title Yapılandırıcı
+                                %span Araç ara. Özelleştir.
+                            %div
+                              %a{href: "/turkey/Pages/stockavailabilitypage.aspx"}
+                                %img{src: "/common/publishingimages/label-icons/icon-key.png"}/
+                                %span.actions-title Stok Durumu
+                                %span İstediğiniz aracın stoklarda bulunup bulunmadığına bakın.
+                      %li.has-sub-menu
+                        %a{href: "#", title: "IVECO BUS"} IVECO BUS
+                        .third-level-menu-wrap
+                          %ul.third-level-menu
+                            %li
+                              %ul.fourth-level-menu
+                                %li
+                                  %a{href: "/ivecobus/asia-tr/pages/home-page.aspx", target: "_blank", title: "IVECO BUS"}
+                                    %img{src: "/turkey/publishingimages/menu/alt-tractions-thumb.jpg"}>/
+                                    IVECO BUS
+              %li.price-list
+                %a{href: "/turkey/kampanyalar/pages/homepage.aspx", title: "KAMPANYALAR"} KAMPANYALAR
+              %li
+                %a{href: "/turkey/hizmetler/pages/sat%C4%B1%C5%9F_sonras%C4%B1_hizmetler_or%C4%B1g%C4%B1n-2020.aspx", title: "SATIŞ SONRASI HİZMETLER"} SATIŞ SONRASI HİZMETLER
+              %li
+                %a{href: "https://www.oktrucks.com.tr", target: "_blank", title: "İKİNCİ EL"} İKİNCİ EL
+              %li.has-sub-menu
+                %a{href: "#", title: ""} HİZMETLER
+                .sub-menu-wrap
+                  .sub-menu-inner
+                    %ul.second-level-menu
+                      %li
+                        %a{href: "/turkey/hizmetler/pages/ustyapi_ust_yapici.aspx", title: "Üstyapı"} Üstyapı
+                      %li
+                        %a{href: "/turkey/hizmetler/pages/finansal-%C3%A7ozumler.aspx", title: "Finansal Çözümler"} Finansal Çözümler
+                      %li
+                        %a{href: "/turkey/hizmetler/pages/e%C4%9Fitim_unetvers%C4%B1ty.aspx", title: ""} EĞİTİM
+                      %li
+                        %a{href: "/turkey/hizmetler/pages/geri_gonusum.aspx", title: "GERİ DÖNÜŞÜM"} GERİ DÖNÜŞÜM
+                      %li
+                        %a{href: "/turkey/hizmetler/Pages/Yol_Yardim.aspx", title: "HİZMETLER - Yol Yardim"} Yol Yardim
+              %li
+                %a{href: "/turkey/bayi-agi/pages/bayii_a%C4%9F%C4%B1.aspx", title: ""} SATIŞ VE SERVİS AĞI
+              %li
+                %a{href: "/turkey/basin-odasi/pages/homepage.aspx", title: "Basın odası"} BasIn odasI
+              %li.has-sub-menu
+                %a{href: "#", title: ""} ŞİRKET
+                .sub-menu-wrap
+                  .sub-menu-inner
+                    %ul.second-level-menu
+                      %li
+                        %a{href: "/turkey/sirket/pages/iveco_ve_degerleri_iveco_turkiye.aspx", title: "IVECO VE DEĞERLERİ"} IVECO VE DEĞERLERİ
+                      %li
+                        %a{href: "/turkey/sirket/pages/yenilikcilik_ve_surudurulebilirlik-2016.aspx", title: "YENİLİKÇİLİK VE SÜRDÜRÜLEBİLİRLİK"} YENİLİKÇİLİK VE SÜRDÜRÜLEBİLİRLİK
+                      %li
+                        %a{href: "/turkey/sirket/pages/sponsorluk.aspx", title: "SPONSORLUK"} SPONSORLUK
+                      %li
+                        %a{href: "/turkey/sirket/pages/kariyer.aspx", title: "KARİYER"} KARİYER
+                      %li
+                        %a{href: "/turkey/sirket/pages/bize_sorun.aspx", title: "BİZE SORUN"} BİZE SORUN

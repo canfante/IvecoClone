@@ -1,0 +1,308 @@
+﻿html[dir="rtl"] .main-header__logo-inner a {
+  left: auto !important;
+  right: 0 !important;
+}
+
+.logo-inner-press-home img {
+  width: 110px;
+  top: 8px !important;
+}
+.logo-inner-press-home-ar img {
+  left: auto !important;
+  right: 0 !important;
+  width: 110px;
+  top: 8px !important;
+}
+
+.logo-inner-home img, .logo-inner-press-home img {
+	position: absolute;
+	top: 12px;
+	left: 0;
+	max-width: 150px;
+	z-index: 5;
+}
+
+.logo-inner-home-ar img, .logo-inner-press-home-ar img {
+	position: absolute;
+	top: 12px;
+	left: auto !important;
+	right: 0 !important;
+	max-width: 150px;
+	z-index: 5;
+}
+
+@media screen and (min-width: 992px) {
+	.logo-inner-home img, .logo-inner-press-home img {
+		top: 15px !important;
+		max-width: none;
+		width: auto;
+	}
+	.logo-inner-home-ar img, .logo-inner-press-home-ar img {
+		top: 15px !important;
+		max-width: none;
+		width: auto;
+	}
+}
+
+.box__content .img-wrap img {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.visual-intro__img img {
+	width: 100%;
+}
+
+.fancybox-opened .fancybox-title.fancybox-title-float-wrap {
+	visibility: hidden;
+	display:none;
+}
+.photo-frame.thumb-wrap img {
+	width: 90px;
+	height: 60px;
+}
+
+.icon-left-margin {
+	margin-left: 10px;
+}
+
+.noSubmit {
+	display: none!important;
+}
+
+.UserGeneric {
+	display: none
+}
+
+@media screen and (max-width: 991px) {
+	#mySearchLabel div.col-md-offset-6.col-sm-12.col-md-6 {
+		padding: 0px;
+	}
+	
+	#mySearchLabel div.form-group {
+		padding-top: 5px;
+	}
+}
+
+.booking-box .landing-intro .landing-intro__back-formA {
+  padding-top: 15px;
+  position: static;
+}
+.booking-box .landing-intro .landing-intro__back-formA a {
+  display: inline-block;
+  color: #878787;
+  text-decoration: none;
+}
+.booking-box .landing-intro .landing-intro__back-formA a:before {
+  content: '< ';
+}
+
+.a2a_kit {
+    float: right;
+}
+
+@media screen and (min-width: 768px) {
+    .special .social-share {
+        padding-top: 9px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .special .social-share {
+        padding-top: 35px;
+        padding-right: 5px;
+    }
+}
+
+.has-error a {
+    color: #ff0000;
+}
+
+@media (min-width: 768px) {
+  .pull-left-column {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 33.3333%;
+  }
+}
+@media (min-width: 992px) {
+  .pull-left-column {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .page-main.page-with-navigation .pull-left-column {
+    width: 34%;
+  }
+}
+/*
+form pop up
+*/
+.form-popup .form-information-request {
+  padding: 2em;
+}
+.form-popup .box__title {
+  position: static;
+  background-color: transparent;
+  color: inherit;
+  font-family: 'GillSansBold', Arial, sans-serif;
+  text-transform: none;
+  margin-bottom: .5em;
+}
+@media (min-width: 800px) {
+  .form-popup .box__title {
+    font-size: 2em;
+  }
+}
+.form-popup .box__title::before {
+  content: none;
+}
+.form-popup .box__title span {
+  padding: 0;
+}
+.form-popup .box--no-img .box__content {
+  padding-top: 0;
+}
+.form-popup .form-information-request__intro {
+  margin-bottom: 1em;
+}
+@media (min-width: 800px) {
+  .form-popup .form-information-request__intro {
+    font-size: 1.4em;
+  }
+}
+.form-popup .form-information-request__mandatory-label {
+  margin-bottom: 1em;
+}
+.form-popup .form-wrap {
+  font-size: 0;
+}
+.form-popup .form-wrap > div {
+  font-size: 13px;
+}
+.form-popup .form-group {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+@media (min-width: 800px) {
+  .form-popup .form-group {
+    width: 49%;
+  }
+  .form-popup .form-group:nth-child(odd) {
+    margin-right: 1%;
+  }
+  .form-popup .form-group:nth-child(even) {
+    margin-left: 1%;
+  }
+}
+.form-popup .form-group .checkbox {
+  margin-bottom: 0;
+}
+.form-popup .form-group textarea {
+  resize: vertical;
+}
+.form-popup .form-information-request__privacy-consent {
+  width: 100%;
+}
+
+.form-popup .box__content {
+  height: auto !important;
+  position: relative;
+}
+
+#CybotCookiebotDialogBodyButtonDetails::after,
+#CybotCookiebotDialogBodyButtonDetails::before {
+    box-sizing: content-box !important
+
+}#CybotCookiebotDialogBodyButtonDetails {
+    background-color: #18a300 !important;
+    border: 1px solid #18a300!important;
+    display: inline-block !important;
+    padding: 1px 4px 3px !important;
+    z-index: 10 !important;
+    font-size: 9.5pt !important;
+    font-weight: 400 !important;
+    margin-left: 12px !important;
+    margin-right: 0 !important;
+    margin-top: 8px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    min-width: 80px !important;
+    box-sizing: content-box !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background-image: none !important
+}
+
+.trakker-config-box {
+	background: url('/common/publishingimages/trakker-configurator-bg.jpg') no-repeat center center !important;
+	background-size: contain;
+	margin-top:-20px;
+	height:584px;
+	width: 1440px;
+	margin-left: -235px;
+	margin-bottom: -40px;
+}
+
+@media screen and (min-width: 370px) { 
+	.trakker-config-box {
+		background: url('/common/publishingimages/trakker-configurator-bg-medium.jpg') no-repeat center center !important;
+		background-size: contain;
+		height:440px;
+		width: 375px;
+		margin-left: auto;
+		margin-bottom: auto;
+	}
+}
+
+@media screen and (min-width: 576px) { 
+	.trakker-config-box {
+		background: url('/common/publishingimages/trakker-configurator-bg-medium.jpg') no-repeat center center !important;
+		background-size: contain;
+		height:440px;
+		width: 576px;
+		margin-left: auto;
+		margin-bottom: auto;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.trakker-config-box {
+		background: url('/common/publishingimages/trakker-configurator-bg-small.jpg') no-repeat center center !important;
+		background-size: contain;
+		height:440px;
+		width: 768px;
+		margin-left: auto;
+		margin-bottom: auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.trakker-config-box {
+		background: url('/common/publishingimages/trakker-configurator-bg-medium.jpg') no-repeat center center !important;
+		background-size: contain;
+		height:584px;
+		width: 992px;
+		margin-left: -26px;
+		margin-bottom: -40px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.trakker-config-box {
+		background: url('/common/publishingimages/trakker-configurator-bg.jpg') no-repeat center center !important;
+		background-size: contain;
+		margin-top:-20px;
+		height:584px;
+		width: 1440px;
+		margin-left: -235px;
+		margin-bottom: -40px;
+	}
+}
+
+#layout.layouthome {
+	max-width: none !important;
+	
+}

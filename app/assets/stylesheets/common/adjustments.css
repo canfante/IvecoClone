@@ -1,0 +1,180 @@
+/* adjustments for specific market*/
+/* replace gillsans with Lato, which supports more characters */
+/* light 300 */
+/* 
+@font-face {
+  font-family: 'GillSansLight';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Lato Light'), local('Lato-Light'), url('@{font-path-market-overwrite}lato/lato-light-webfont.woff') format('woff');
+}
+ */
+/* regular 400 */
+@font-face {
+    font-family: 'GillSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url('../../../../common/StyleLibrary/RWDIveco/fonts/lato/lato-regular-webfont.woff') format('woff');
+}
+/* semibold 600 */
+@font-face {
+    font-family: 'GillSans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Lato SemiBold'), local('Lato-SemiBold'), url('../../../../common/StyleLibrary/RWDIveco/fonts/lato/lato-semibold-webfont.woff') format('woff');
+}
+/* bold 700 */
+/* 
+@font-face {
+	font-family: 'GillSansBold';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Lato Bold'), local('Lato-Bold'), url('@{font-path-market-overwrite}lato/lato-bold-webfont.woff') format('woff');
+}
+ */
+.visual-intro__txt--press .intro-title {
+    font-family: "GillSansBold", Arial, sans-serif;
+    font-size: 23px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.main-content.archiviofotografico .box__title span img.label-img {
+    display: none!important;
+}
+#content-promo, #content-promo-dem {
+    background-color: #00549a !important;
+}
+#content-img{
+	background-color: #00549a !important;
+}
+#content-img img {
+    width: 49%;
+    padding: 0;
+    float: left;
+}
+#content-img span {
+	margin-left: 15px;
+    background-color: #00549a;
+    padding: 10px;
+    float: left;
+    width: 49%;
+    color: #fff;
+    font-size: 1.6em;
+}
+
+@media screen and (max-width: 980px) {
+#content-img img {
+    width: 100%;
+    padding: 0;
+    float: none;
+}
+#content-img span {
+    margin-top: 20px;
+    background-color: #00549a;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2em;
+}
+}
+
+#video-newsletter .box-txtimg__txt {
+	padding:0;
+	margin:0;
+	background-color: #000;
+}
+
+.background_txt_img{
+	background-color: rgba(0,0,0,0.7);
+}
+
+
+/* KVKK  */
+
+.kvkk_info {
+	width: 820px;
+	height: 420px;
+	background-color: rgba(0,0,0,.9);
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 99999;
+	color: #ffffff;
+}
+
+
+#exit {
+	width: 40px;
+	height: 30px;
+	/* background-color: #fff; */
+	position: absolute;
+	right: 0px;
+	color: #ffffff;
+	background-image: url(http://www.iveco.com/common/StyleLibrary/RWDIveco/images/fancybox/fancybox_sprite.png);
+	/* background-size: 40px; */
+	top: 7px;
+	background-repeat: no-repeat !important;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.kvkk_info h2 {
+	position: relative;
+	margin: 20px 90px 0px;
+}
+
+.kvkk_info ul {
+	position: relative;
+	top: 40px;
+	margin: 90px;
+	padding: 0px;
+	/* text-align: cen; */
+}
+
+
+.kvkk_info ul a {
+	text-decoration: none;
+}
+
+.kvkk_info ul li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin: 15px 0px;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+	.kvkk_info {
+	width: 90%;
+	height: max-content;
+	padding: 60px 40px;
+	}
+	
+	.kvkk_info h2 {
+	margin: 20px 0px 0px;
+	}
+
+	.kvkk_info ul {
+	margin: 0px;
+	padding: 0px;
+	}
+}
+
+
+/* ========== modifica menu per nuova HP */
+
+a[title~=x-way-turkey] {
+  padding: 0px !important;
+display: none !important;
+}
+
+a[title~=t-way-turkey] {
+  padding: 0px !important;
+display: none !important;
+}
