@@ -1,0 +1,950 @@
+%body
+  :javascript
+      var enableExtendToTracking = false;
+    / Google Tag Manager (noscript)
+  %noscript
+    %iframe{height: "0", src: "https://www.googletagmanager.com/ns.html?id=GTM-PMBKMCL", style: "display:none;visibility:hidden", width: "0"}
+    / End Google Tag Manager (noscript)
+    / Global site tag (gtag.js) - Google Analytics
+  %script{async: "", src: "https://www.googletagmanager.com/gtag/js?id=UA-2179883-1"}
+  :javascript
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2179883-23');
+  :javascript
+      function kvkk() {
+        $('.kvkk_info').fadeIn();
+      }
+  :javascript
+      $(document).ready(function() {$('#exit').click(function() {
+          $('.kvkk_info').fadeOut(400);
+        });
+      });
+  :javascript
+      $(document).ready(function(){
+      $('.first-level-menu > li:nth-child(2)').addClass('price-list');
+      });
+  :javascript
+      $(document).ready(function(){
+      $(".price-list > .sub-menu-wrap > .sub-menu-inner > .second-level-menu").append('<li><a href="http://www.iveco.comhttps://www.iveco.com/turkey/Documents/PriceList/Fiyat%20Listesi.pdf" target="_blank" rel="nofollow"><span>TAVSIYE EDILEN FIYAT LISTESI</span></a></li><li><a href="http://www.iveco.comhttps://www.iveco.com/turkey/Documents/PriceList/Kamu%20Listesi.pdf" target="_blank" rel="nofollow"><span>KAMU ARAÇLARI</span></a></li>');
+      });
+  #layout.layout
+    %header.main-header.navbar.navbar-default
+      .main-header__logo.navbar-header
+        .container
+          .main-header__logo-inner.logo-inner-home
+            %img{src: "/common/StyleLibrary/RWDIveco/images/logo_iveco.png", title: "Iveco"}/
+          %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-header__interaction-area", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar.top-bar
+            %span.icon-bar.middle-bar
+            %span.icon-bar.bottom-bar
+      #main-header__interaction-area.main-header__interaction-area.collapse.navbar-collapse
+        .main-header__search{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          .container
+            .main-header__search-form
+              .main-header__search-form-inner
+                %input#searchBox{onkeypress: "searchKeyPress(event,'/pages/SearchResult.aspx','https://www.iveco.comhttps://www.iveco.com/turkey','NewIvecoSite');", placeholder: "IVECO'da ara\n", type: "text"}/
+                %a#searchButton{href: "javascript:Search('/pages/SearchResult.aspx','https://www.iveco.comhttps://www.iveco.com/turkey','NewIvecoSite');"} Search
+        .main-header__navigation
+          %ul.main-header__nav-type
+            %li
+              %a{href: "#"} Sizin için Iveco
+            %li.active
+              %a{href: "#"} Menü
+          .main-header__nav-content
+            .main-header__tools-navigation.main-nav.noindex
+              %nav
+                %ul.first-level-menu
+                  %li.has-sub-menu
+                    %a{href: "javascript:void(0)"} KONFIGÜRATÖR
+                    .sub-menu-wrap
+                      .sub-menu-inner
+                        %ul.second-level-menu
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=Daily"}
+                              %span New Daily
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=Eurocargo"}
+                              %span Eurocargo
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=S-Way"}
+                              %span IVECO S-Way
+                  %li.has-sub-menu
+                    %a{href: "javascript:void(0)"} FIYAT LISTESI
+                    .sub-menu-wrap
+                      .sub-menu-inner
+                        %ul.second-level-menu
+                  %li
+                    %a{href: "https://www.iveco.com/turkey/kampanyalar/Pages/HomePage.aspx", target: "_self"} KAMPANYALAR
+                  %li
+                    %a{href: "https://www.iveco.com/turkey/Pages/bize-ula%C5%9Fin.aspx", target: "_self"} BİZE ULAŞIN
+            .main-header__main-navigation.main-nav.active.noindex{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+              %nav
+                %ul.first-level-menu
+                  %li.has-sub-menu
+                    %a{href: "#", title: ""} ÜRÜN BİLGİLERİ
+                    .sub-menu-wrap
+                      .sub-menu-inner
+                        %ul.second-level-menu
+                          %li.has-sub-menu.hover
+                            %a{href: "#", title: "YOL ARACI"} YOL ARACI
+                            .third-level-menu-wrap
+                              %ul.third-level-menu
+                                %li
+                                  %span.category Hafif (3,5-7 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-daily-van-22.aspx", title: "Daily Panelvan"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/van-daily2022-iveco-menu.jpg"}/
+                                        .txt-wrap Daily Panelvan
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-daily-cab-22.aspx", title: "Daily MY22 Şasi Kamyonet"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/cab-daily2022-iveco-menu.jpg"}/
+                                        .txt-wrap Daily Şasi Kamyonet
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/daily-blue-power-my19.aspx", title: "Daily Blue Power"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/thumbdailybp2019.png"}/
+                                        .txt-wrap Daily Blue Power
+                                %li
+                                  %span.category Orta Sinif (10-18 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/new-eurocargo-iveco.aspx", title: "Eurocargo"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/eurocargo.jpg"}/
+                                        .txt-wrap Eurocargo
+                                %li
+                                  %span.category Ağir Vasita (&gt;=16 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-s-way-22.aspx", title: "IVECO S-WAY"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/iveco_s-way_my2022_diesel_thumb_new3.jpg"}/
+                                        .txt-wrap IVECO S-WAY
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-s-way-22-dogal-gazli.aspx", title: "IVECO S-WAY NP"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/iveco_s-way_my2022_gas_thumb.jpg"}/
+                                        .txt-wrap IVECO S-WAY NP
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-x-way.aspx", title: "x-way-turkey"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/empty-pixel.png"}/
+                                        .txt-wrap
+                                          %p.xway-turkey{style: "display:none;"} X-WAY
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-t-way-drive-the-new-way.aspx", title: "t-way-turkey"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/empty-pixel.png"}/
+                                        .txt-wrap
+                                          %p.tway-turkey{style: "display:none;"} X-WAY
+                              .actions
+                                %div
+                                  %a{href: "https://www.iveco.com/turkey/pages/ConfiguratorPage.aspx"}
+                                    %img{src: "/common/publishingimages/label-icons/icon-glass.png"}/
+                                    %span.actions-title Yapılandırıcı
+                                    %span Araç ara. Özelleştir.
+                                %div
+                                  %a{href: "https://www.iveco.com/turkey/Pages/stockavailabilitypage.aspx"}
+                                    %img{src: "/common/publishingimages/label-icons/icon-key.png"}/
+                                    %span.actions-title Stok Durumu
+                                    %span İstediğiniz aracın stoklarda bulunup bulunmadığına bakın.
+                          %li.has-sub-menu
+                            %a{href: "#", title: "HAFİF OF ROAD"} HAFİF OF ROAD
+                            .third-level-menu-wrap
+                              %ul.third-level-menu
+                                %li
+                                  %span.category Ağir Vasita (&gt;=18 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-x-way.aspx", title: "IVECO X-WAY"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/iveco_xway_thumb.jpg"}/
+                                        .txt-wrap X-WAY
+                          %li.has-sub-menu
+                            %a{href: "#", title: "ARAZİ ARACI"} ARAZİ ARACI
+                            .third-level-menu-wrap
+                              %ul.third-level-menu
+                                %li
+                                  %span.category Hafif (3,5-5,5 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/yeni-daily-4x4.aspx", title: "Daily 4x4"}
+                                        .thumb-wrap
+                                          %img{src: "/common/publishingimages/2019daily4x4/daily_4x4_thumb.jpg"}/
+                                        .txt-wrap Daily 4x4
+                                %li
+                                  %span.category Orta Sinif (11.5-15.0 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/4x4-eurocargo.aspx", title: "Eurocargo 4x4 "}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/eurocargo-4x4-iveco-menu.jpg"}/
+                                        .txt-wrap Eurocargo 4x4
+                                %li
+                                  %span.category Agir Vasita (&gt;18 T)
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "https://www.iveco.com/turkey/urunler/pages/iveco-t-way-drive-the-new-way.aspx", title: "IVECO T-WAY"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/menu/iveco_tway_thumb.png"}/
+                                        .txt-wrap IVECO T-WAY
+                                    %li
+                                      %a{href: "http://www.iveco-astra.com/tr/", target: "_blank", title: "Astra"}
+                                        .thumb-wrap
+                                          %img{src: "https://www.iveco.com/turkey/publishingimages/iconahd9.jpg"}/
+                                        .txt-wrap Astra
+                              .actions
+                                %div
+                                  %a{href: "https://www.iveco.com/turkey/pages/ConfiguratorPage.aspx"}
+                                    %img{src: "/common/publishingimages/label-icons/icon-glass.png"}/
+                                    %span.actions-title Yapılandırıcı
+                                    %span Araç ara. Özelleştir.
+                                %div
+                                  %a{href: "https://www.iveco.com/turkey/Pages/stockavailabilitypage.aspx"}
+                                    %img{src: "/common/publishingimages/label-icons/icon-key.png"}/
+                                    %span.actions-title Stok Durumu
+                                    %span İstediğiniz aracın stoklarda bulunup bulunmadığına bakın.
+                          %li.has-sub-menu
+                            %a{href: "#", title: "IVECO BUS"} IVECO BUS
+                            .third-level-menu-wrap
+                              %ul.third-level-menu
+                                %li
+                                  %ul.fourth-level-menu
+                                    %li
+                                      %a{href: "/ivecobus/asia-tr/pages/home-page.aspx", target: "_blank", title: "IVECO BUS"}
+                                        %img{src: "https://www.iveco.com/turkey/publishingimages/menu/alt-tractions-thumb.jpg"}>/
+                                        IVECO BUS
+                  %li
+                    %a{href: "https://www.iveco.com/turkey/kampanyalar/pages/homepage.aspx", title: "KAMPANYALAR"} KAMPANYALAR
+                  %li
+                    %a{href: "https://www.iveco.com/turkey/hizmetler/pages/sat%C4%B1%C5%9F_sonras%C4%B1_hizmetler_or%C4%B1g%C4%B1n-2020.aspx", title: "SATIŞ SONRASI HİZMETLER"} SATIŞ SONRASI HİZMETLER
+                  %li
+                    %a{href: "https://www.oktrucks.com.tr", target: "_blank", title: "İKİNCİ EL"} İKİNCİ EL
+                  %li.has-sub-menu
+                    %a{href: "#", title: ""} HİZMETLER
+                    .sub-menu-wrap
+                      .sub-menu-inner
+                        %ul.second-level-menu
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/hizmetler/pages/ustyapi_ust_yapici.aspx", title: "Üstyapı"} Üstyapı
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/hizmetler/pages/finansal-%C3%A7ozumler.aspx", title: "Finansal Çözümler"} Finansal Çözümler
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/hizmetler/pages/e%C4%9Fitim_unetvers%C4%B1ty.aspx", title: ""} EĞİTİM
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/hizmetler/pages/geri_gonusum.aspx", title: "GERİ DÖNÜŞÜM"} GERİ DÖNÜŞÜM
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/hizmetler/Pages/Yol_Yardim.aspx", title: "HİZMETLER - Yol Yardim"} Yol Yardim
+                  %li
+                    %a{href: "https://www.iveco.com/turkey/bayi-agi/pages/bayii_a%C4%9F%C4%B1.aspx", title: ""} SATIŞ VE SERVİS AĞI
+                  %li
+                    %a{href: "https://www.iveco.com/turkey/basin-odasi/pages/homepage.aspx", title: "Basın odası"} BasIn odasI
+                  %li.has-sub-menu
+                    %a{href: "#", title: ""} ŞİRKET
+                    .sub-menu-wrap
+                      .sub-menu-inner
+                        %ul.second-level-menu
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/sirket/pages/iveco_ve_degerleri_iveco_turkiye.aspx", title: "IVECO VE DEĞERLERİ"} IVECO VE DEĞERLERİ
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/sirket/pages/yenilikcilik_ve_surudurulebilirlik-2016.aspx", title: "YENİLİKÇİLİK VE SÜRDÜRÜLEBİLİRLİK"} YENİLİKÇİLİK VE SÜRDÜRÜLEBİLİRLİK
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/sirket/pages/sponsorluk.aspx", title: "SPONSORLUK"} SPONSORLUK
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/sirket/pages/kariyer.aspx", title: "KARİYER"} KARİYER
+                          %li
+                            %a{href: "https://www.iveco.com/turkey/sirket/pages/bize_sorun.aspx", title: "BİZE SORUN"} BİZE SORUN
+    %form#aspnetForm{action: "./homepage.aspx", method: "post", onsubmit: "javascript:return WebForm_OnSubmit();"}
+      .aspNetHidden
+        %input#__SPSCEditMenu{name: "__SPSCEditMenu", type: "hidden", value: "true"}/
+        %input#MSOWebPartPage_PostbackSource{name: "MSOWebPartPage_PostbackSource", type: "hidden", value: ""}/
+        %input#MSOTlPn_SelectedWpId{name: "MSOTlPn_SelectedWpId", type: "hidden", value: ""}/
+        %input#MSOTlPn_View{name: "MSOTlPn_View", type: "hidden", value: "0"}/
+        %input#MSOTlPn_ShowSettings{name: "MSOTlPn_ShowSettings", type: "hidden", value: "False"}/
+        %input#MSOGallery_SelectedLibrary{name: "MSOGallery_SelectedLibrary", type: "hidden", value: ""}/
+        %input#MSOGallery_FilterString{name: "MSOGallery_FilterString", type: "hidden", value: ""}/
+        %input#MSOTlPn_Button{name: "MSOTlPn_Button", type: "hidden", value: "none"}/
+        %input#__EVENTTARGET{name: "__EVENTTARGET", type: "hidden", value: ""}/
+        %input#__EVENTARGUMENT{name: "__EVENTARGUMENT", type: "hidden", value: ""}/
+        %input#__REQUESTDIGEST{name: "__REQUESTDIGEST", type: "hidden", value: "noDigest"}/
+        %input#MSOSPWebPartManager_DisplayModeName{name: "MSOSPWebPartManager_DisplayModeName", type: "hidden", value: "Browse"}/
+        %input#MSOSPWebPartManager_ExitingDesignMode{name: "MSOSPWebPartManager_ExitingDesignMode", type: "hidden", value: "false"}/
+        %input#MSOWebPartPage_Shared{name: "MSOWebPartPage_Shared", type: "hidden", value: ""}/
+        %input#MSOLayout_LayoutChanges{name: "MSOLayout_LayoutChanges", type: "hidden", value: ""}/
+        %input#MSOLayout_InDesignMode{name: "MSOLayout_InDesignMode", type: "hidden", value: ""}/
+        %input#MSOSPWebPartManager_OldDisplayModeName{name: "MSOSPWebPartManager_OldDisplayModeName", type: "hidden", value: "Browse"}/
+        %input#MSOSPWebPartManager_StartWebPartEditingName{name: "MSOSPWebPartManager_StartWebPartEditingName", type: "hidden", value: "false"}/
+        %input#MSOSPWebPartManager_EndWebPartEditing{name: "MSOSPWebPartManager_EndWebPartEditing", type: "hidden", value: "false"}/
+        %input#__VIEWSTATE{name: "__VIEWSTATE", type: "hidden", value: "/wEPDwUJODEzNjEwODk3D2QWAmYPZBYIAgsPZBYCZg8WAh4TUHJldmlvdXNDb250cm9sTW9kZQspiAFNaWNyb3NvZnQuU2hhcmVQb2ludC5XZWJDb250cm9scy5TUENvbnRyb2xNb2RlLCBNaWNyb3NvZnQuU2hhcmVQb2ludCwgVmVyc2lvbj0xNS4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03MWU5YmNlMTExZTk0MjljAWQCDw9kFgJmDxYCHwALKwQBZAIfD2QWDAUmZ19mYTFlODQyYV8yOTNkXzRjMWZfOWIxNF9mOGQzMjc3MTQxMmMPDxYEHgpDaHJvbWVUeXBlAgIeBVRpdGxlBRNJdmVjbyBIb21lIFByb2RvdHRpZGQFJmdfOTAyYzE5NGNfZDcwMl80ZjViXzliNWFfYTg2OTI0NDI5YTkwDw8WBB8BAgIfAgUWSXZlY28gSG9tZSBGaW5kIERlYWxlcmRkBSZnXzBiMDk5ZDZhXzllMDNfNGRiNl9hNjA1X2NlZTdkMDU3ZWZjNg8PFgQfAQICHwIFGEl2ZWNvIEhvbWUgQ29uZmlndXJhdG9yZWRkBSZnXzBkNWNkMjhlX2M0Y2NfNDQzZl84NDg1X2VhYTI0MTY4Mzc3Yg8PFgQfAQICHwIFFUl2ZWNvIEhvbWUgUHJvbW96aW9uaWRkBSZnX2ZjZThjMDZlX2Y1MmNfNGIxMl9hZmE5X2Q2ZWRhZjUzYjEwZQ8PFgQfAQICHwIFF0l2ZWNvIEhvbWUgSW5mb3JtYXppb25pZGQFJmdfMGE3ZGViMWZfMTM2Zl80YTc5X2E4NzhfZGQ2ODY5YzQ4ZDZlD2QWBGYPFgIeB1Zpc2libGVoZAIBDxYCHwNoZAIvD2QWAgICD2QWAgIJDxYCHwALKwQBZGQRtehiPUiaSICu3rWzqWcu9RywMp0m40sT4gR5+kf0RQ=="}/
+      :javascript
+          //<![CDATA[
+          var theForm = document.forms['aspnetForm'];
+          if (!theForm) {
+              theForm = document.aspnetForm;
+          }
+          function __doPostBack(eventTarget, eventArgument) {
+              if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                  theForm.__EVENTTARGET.value = eventTarget;
+                  theForm.__EVENTARGUMENT.value = eventArgument;
+                  theForm.submit();
+              }
+          }
+          //]]>
+      :javascript
+          //<![CDATA[
+          var MSOWebPartPageFormName = 'aspnetForm';
+          var g_presenceEnabled = true;
+          var g_wsaEnabled = false;
+          var g_wsaQoSEnabled = false;
+          var g_wsaQoSDataPoints = [];
+          var g_wsaLCID = 1033;
+          var g_wsaListTemplateId = 850;
+          var g_wsaSiteTemplateId = 'BLANKINTERNET#0';
+          var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fturkey", webAbsoluteUrl: "https:\u002f\u002fwww.iveco.com\u002fturkey", siteAbsoluteUrl: "https:\u002f\u002fwww.iveco.com\u002fturkey", serverRequestPath: "\u002fturkey\u002fpages\u002fhomepage.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "Iveco Turkey", webTemplate: "53", tenantAppVersion: "0", isAppWeb: false, Has2019Era: true, webLogoUrl: "\u002f_layouts\u002fimages\u002ftitlegraphic.gif", webLanguage: 1033, currentLanguage: 1033, currentUICultureName: "en-US", currentCultureName: "en-US", clientServerTimeDelta: new Date("2022-06-05T19:42:46.1190716Z") - new Date(), siteClientTag: "155$$15.0.5233.1000", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:16,Low:196673},pageListId:"{a96acdff-b71a-40c5-9ebf-edc9cf2c76a3}",pageItemId:152, pagePersonalizationScope:1, alertsEnabled:true, siteServerRelativeUrl: "\u002fturkey", allowSilverlightPrompt:'True'};//]]>
+      %script{src: "/_layouts/15/init.js?rev=AS%2Bv0UYCkcLYkV95cqJXGA%3D%3D", type: "text/javascript"}
+      :javascript
+          //<![CDATA[
+          var L_Menu_BaseUrl="https://www.iveco.com/turkey";
+          var L_Menu_LCID="1033";
+          var L_Menu_SiteTheme="null";
+          //]]>
+      %script{src: "/_layouts/15/1033/initstrings.js?rev=S11vfGURQYVuACMEY0tLTg%3D%3D", type: "text/javascript"}
+      %script{src: "/_layouts/15/1033/strings.js?rev=xXYZY4hciX287lShPZuClw%3D%3D", type: "text/javascript"}
+      %script{src: "/_layouts/15/ie55up.js?rev=0R4dbpInVlmjoVSw2Gglmw%3D%3D", type: "text/javascript"}
+      :javascript
+          //<![CDATA[
+          function WebForm_OnSubmit() {
+          UpdateFormDigest('\u002fturkey', 1440000);if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+          return true;
+          }
+          //]]>
+      .aspNetHidden
+        %input#__VIEWSTATEGENERATOR{name: "__VIEWSTATEGENERATOR", type: "hidden", value: "1DF1A77D"}/
+      %main.new_home{"data-page" => "homepage"}
+        %section.highlighted-actions.visible-xs-block.visible-sm-block
+          .container
+            .row
+              .col-sm-6
+                %a.btn.btn-primary.btn-block{href: "https://www.iveco.com/turkey/pages/ConfiguratorPage.aspx"} Aracınızı bulun
+              .col-sm-6
+                %a.btn.btn-primary.btn-block{href: "/Pages/dealer_locator.html?language=en&country=Turkey"} Bayi bulun
+        %section.hero_slider{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          #slick-1.slider-wrapper
+            .slider_home
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2022/iveco_webbanner_promo2022_1920x1080_03-2022.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass90100DBE44E64D2493E56AFC802B7979
+                        IVECO DAILY’LERDE
+                        %br>/
+                        YAZA HAZIRLIK KAMPANYASI
+                        %br/
+                        %span{style: "font-size:20px;"} 100.000 TL 12 AY % 0,26 FAİZ ORANI
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/Iveco-Daily-campaign.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2021/IVECO-web-banner-eurocargo-promo-102021_1920x1080.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass17390017F4C4431FBC662297BCB94542
+                        IVECO EUROCARGO’LARDA
+                        %br>/
+                        YAZA HAZIRLIK KAMPANYASI
+                        %br/
+                        %span{style: "font-size:20px;"} 150.000 TL  12 AY  %0,26 FAİZ ORANI
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/IVECO-Eurocargo-Campaign.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2022/IVECOBUS_Busworld_Turkey_1920x1080.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass2DB07E90F10A403EA92CCA1935F68FD3
+                        IVECO BUS
+                        %br>/
+                        BUSWORLD TÜRKİYE FUARI’NDA
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "/ivecobus/asia-tr/Pages/busworld.aspx", target: "NewPage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2022/IVECO-S-WAY-2022_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass13AEECDCB7294CE7AD1044DF60825108
+                        IVECO S-WAY
+                        %br>/
+                        YENİ S-WAY İLE YENİ YAŞAM TARZINIZ
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-s-way-22.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2022/IVECO-S-WAY-NP-2022_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClassA7A6EEC1A6E2416E8E115F1FAA06026B
+                        IVECO S-Way DOĞAL GAZLI VERSİYON
+                        %br>/
+                        DOĞAL YOL
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-s-way-22-dogal-gazli.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2022/IVECO-Daily-Van-22_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClassF17945BF1EBC47AAB9655D95ACEA2DB2
+                        MERHABA DAILY!
+                        %br>/
+                        YENİLİKLER NELER?
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-daily-van-22.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2022/IVECO-Daily-Cab-22_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClassE69C525A4FAB41708D6B1CA2D93CC044
+                        MERHABA DAILY!
+                        %br>/
+                        YENİLİKLER NELER?
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-daily-cab-22.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2021/Eurocargo_banner_TurkeyHP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass34D82740BBF14E54AD7C4E0CDF08C455
+                        YENİ EUROCARGO​​
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/new-eurocargo-iveco.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2021/IVECO-T-WAY_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClassE74AA26C205F4F01A2CA7AE010A8020A
+                        IVECO T-WAY
+                        %br>/
+                        FARKLI SÜRÜŞ DENEYİMİ
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/Pages/iveco-t-way-drive-the-new-way.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2021/IVECO-X-WAY_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass4C0172D495C34D028B3286BBC3979A70
+                        %span{style: "color:#dc5717;"} ​​X-WAY
+                        = succeed "M\u{dc}KEMMEL" do
+                          %br/
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/Pages/iveco-x-way.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2021/IVECO-Daily-Hi-Matic_TR.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass0CA6A5F3573642558C9DEC8B96A380DF
+                        IVECO HI-MATIC
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/IVECO-Hi-Matic-Test-drive.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slide
+                .slide-image
+                  %img{src: "https://www.iveco.com/turkey/PublishingImages/canvas-hp/2021/IVECO-Daily4x4_HP.jpg"}/
+                .slider-shadow
+                .slide-content
+                  .slide-content--title.active
+                    %h2
+                      .ExternalClass70E4D4200EE342E98A40C50CB1E951D5
+                        YENİ Daily 4X4
+                        %br>/
+                        4 TÜM YOLLAR İÇİN 4 TÜM ŞARTLAR İÇİN
+                        %br/
+                  .slide-content--actions
+                    %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/yeni-daily-4x4.aspx", target: "SamePage"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+            .slider-arrow
+              %span.icon{"data-page" => "slickPrev"}
+                %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_left_big.png"}/
+              %span.icon{"data-page" => "slickNext"}
+                %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_big.png"}/
+            .slider-progress
+              .progress
+            .slider-pages
+              %span.page{"data-page" => "current"}
+              %span.sep
+              %span.page{"data-page" => "all"}
+        %section.products{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          .strip_section
+            .container
+              .row
+                .col-xs-12.col-md-6
+                  %h3.subtitle ürünler
+                .col-xs-12.col-md-6
+                  %ul.product_filters
+                    %li
+                      %span.active{"data-products" => "19"} Hafi̇f
+                    %li
+                      %span{"data-products" => "23"} Orta Sinif
+                    %li
+                      %span{"data-products" => "25"} Ağir Vasita
+          .products_section
+            .product_container.active{"data-products" => "19"}
+              .slider_home
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/daily-my22/iveco-daily-van-22_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 Daily Panelvan
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-daily-van-22.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/daily-my22/iveco-daily-cab-22_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 Daily Şasi Kamyonet
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-daily-cab-22.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/daily-blue-power/my19/iveco-daily-bluepower_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 Daily Blue Power
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/daily-blue-power-my19.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slider-pager
+                %span.icon{"data-page" => "slickPrev"}
+                  %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_left_dark.png"}/
+                .pages
+                  %span.page{"data-page" => "current"}
+                  %span.sep
+                  %span.page{"data-page" => "all"}
+                %span.icon{"data-page" => "slickNext"}
+                  %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+            .product_container{"data-products" => "23"}
+              .slider_home
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/eurocargo/new_eurocargo/iveco-eurocargo_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 Eurocargo
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/new-eurocargo-iveco.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slider-pager
+                %span.icon{"data-page" => "slickPrev"}
+                  %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_left_dark.png"}/
+                .pages
+                  %span.page{"data-page" => "current"}
+                  %span.sep
+                  %span.page{"data-page" => "all"}
+                %span.icon{"data-page" => "slickNext"}
+                  %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+            .product_container{"data-products" => "25"}
+              .slider_home
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/s-way-22/iveco-s-way-2022_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 IVECO S-WAY
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-s-way-22.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/s-way-22/np/iveco-s-way-np-2022_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 IVECO S-WAY NP
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-s-way-22-dogal-gazli.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/x-way/iveco-x-way_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 IVECO X-WAY
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-x-way.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                .slide
+                  .slide-image
+                    %img{src: "https://www.iveco.com/turkey/urunler/publishingimages/t-way/iveco-t-way_thumbhp.jpg"}/
+                  .slider-shadow
+                  .slide-content
+                    .slide-content--title
+                      %h2 IVECO T-WAY
+                    .slide-content--actions
+                      %a.btn.btn-primary{href: "https://www.iveco.com/turkey/urunler/pages/iveco-t-way-drive-the-new-way.aspx"}
+                        %span.text DAHA FAZLASINI KEŞFEDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+              .slider-pager
+                %span.icon{"data-page" => "slickPrev"}
+                  %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_left_dark.png"}/
+                .pages
+                  %span.page{"data-page" => "current"}
+                  %span.sep
+                  %span.page{"data-page" => "all"}
+                %span.icon{"data-page" => "slickNext"}
+                  %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+        %section.promo{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          .strip_section
+            .container
+              .row
+                .col-xs-12
+                  %h3.subtitle Kampanyalar
+          .promo-slider
+            .slider_home
+              .slide
+                .slide-image
+                  %img{alt: "IVECO EUROCARGO’LARDA RAMAZAN KAMPANYASI", src: "https://www.iveco.com/turkey/kampanyalar/PublishingImages/2021/Eurocargo/IVECO-web-banner-eurocargo-promo-102021_900x430.jpg"}/
+                .slide-content
+                  .slide-content--info
+                    %span.category Orta/Orta
+                    %h2
+                      %span{style: "font-size: 24px;"}
+                        IVECO EUROCARGO’LARDA
+                        %br>/
+                        YAZA HAZIRLIK KAMPANYASI
+                    %span.promo-val
+                    %a.btn.btn-tertiary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/IVECO-Eurocargo-Campaign.aspx"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+              .slide
+                .slide-image
+                  %img{alt: "IVECO DAILY’LERDE YAZA HAZIRLIK KAMPANYASI", src: "https://www.iveco.com/turkey/kampanyalar/PublishingImages/2022/iveco_webbanner_promo2022_900x430_03-2022.jpg"}/
+                .slide-content
+                  .slide-content--info
+                    %span.category Hafif/Satış Kampanyası
+                    %h2
+                      IVECO DAILY’LERDE
+                      %br>/
+                      YAZA HAZIRLIK KAMPANYASI
+                    %span.promo-val
+                    %a.btn.btn-tertiary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/Iveco-Daily-campaign.aspx"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+              .slide
+                .slide-image
+                  %img{alt: "TEST SÜRÜŞÜ İÇİN SİZLERİ YETKİLİ SATICILARIMIZA BEKLİYORUZ", src: "https://www.iveco.com/turkey/kampanyalar/PublishingImages/2020/Iveco-web-test-drive-HI-MATIC-TK-slide-HP.jpg"}/
+                .slide-content
+                  .slide-content--info
+                    %span.category Hafif/Satış Kampanyası
+                    %h2 IVECO HI-MATIC, GERÇEK OTOMATİK - SINIFINDA İLK 8 İLERİ TAM OTOMATİK
+                    %span.promo-val
+                    %a.btn.btn-tertiary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/IVECO-Hi-Matic-Test-drive.aspx"}
+                      %span.text DAHA FAZLASINI KEŞFEDİN
+                      %span.icon
+                        %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+            .promo-slider-footer.container
+              .row
+                .slider-pager.col-xs-12.col-md-6
+                  %span.icon{"data-page" => "slickPrev"}
+                    %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_left_dark.png"}/
+                  .pages
+                    %span.page{"data-page" => "current"}
+                    %span.sep
+                    %span.page{"data-page" => "all"}
+                  %span.icon{"data-page" => "slickNext"}
+                    %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_dark.png"}/
+                .slider-link.col-xs-12.col-md-6
+                  %a.btn.btn-primary{href: ""}
+                    %span.text DAHA FAZLASINI KEŞFEDİN
+                    %span.icon
+                      %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+        %section.find_store{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          .container
+            .row
+              .col-xs-12
+                .find_store-content
+                  .find_store-content-title
+                    %h2 BAYİ VE SERVİS BUL
+                  .find_store-content-module
+                    .form
+                      .form-field.input-line
+                        %input#autocompleteAddress{name: "txtFindBrandAddress", placeholder: "Adres", type: "text"}/
+                        %span.icon
+                          %img{src: "/common/IvecoIcons/trova_conc.png"}/
+                      .form-field.button
+                        %a.btn.btn-tertiary{href: "/pages/dealer_locator.html?language=tr&country=turkey&brand=", onclick: "return FindBrand(this);", target: "_self"}
+                          %span.text Arama
+                          %span.icon
+                            %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_blue.png"}/
+                        %input#txtFindBrandPageUrl{name: "txtFindBrandPageUrl", type: "hidden", value: "/pages/dealer_locator.html?language=tr&country=turkey&brand="}/
+        %section.configuratore{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          .container
+            .row
+              .col-xs-12
+                .configuratore-title
+                  %h2 Konfigüratör
+                .configuratore-subtitle
+                  %h3 Size en uygun aracı konfigüre edebilirsiniz.
+          .container
+            .row
+              .col-xs-12
+                .items
+                  .configuratore-item
+                    .configuratore-item--image
+                      %img{src: "https://www.iveco.com/turkey/PublishingImages/Configurator/daily2022_1.png"}/
+                    .configuratore-item--title
+                      %span Yeni Daily
+                    .configuratore-item--action
+                      %a.btn.btn-secondary{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=Daily"}
+                        %span.text HEMEN KONFİGÜRE EDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/icon-glass.png"}/
+                  .configuratore-item
+                    .configuratore-item--image
+                      %img{src: "https://www.iveco.com/turkey/PublishingImages/Configurator/eurocargo.png"}/
+                    .configuratore-item--title
+                      %span Eurocargo
+                    .configuratore-item--action
+                      %a.btn.btn-secondary{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=Eurocargo"}
+                        %span.text HEMEN KONFİGÜRE EDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/icon-glass.png"}/
+                  .configuratore-item
+                    .configuratore-item--image
+                      %img{src: "https://www.iveco.com/turkey/PublishingImages/Configurator/s-way2022.png"}/
+                    .configuratore-item--title
+                      %span IVECO S-WAY
+                    .configuratore-item--action
+                      %a.btn.btn-secondary{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=S-Way"}
+                        %span.text HEMEN KONFİGÜRE EDİN
+                        %span.icon
+                          %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/icon-glass.png"}/
+        .ms-rtestate-field
+          #bilgi-fiyat-listesi
+             
+            %br/
+            %br/
+        %section.info{"xmlns:fn" => "http://www.w3.org/2005/xpath-functions", "xmlns:xs" => "http://www.w3.org/2001/XMLSchema"}
+          .strip_section
+            .container
+              .row
+                .col-xs-12
+                  %h2.title BİLGİ
+          .container
+            .row
+              .col-xs-12
+                .infos
+                  .slider_home
+                    .post
+                      .post-image
+                        %img{alt: "", src: "https://www.iveco.com/turkey/basin-odasi/basin-bultenleri/PublishingImages/2022/IVECO-dan-ABC-Lojistik-e-100-adet-S-WAY-cekici_thumb.jpg", title: "Press"}/
+                      .post-content
+                        %span.category BASIN
+                        %h3.post-title
+                          .ExternalClass08B439826FBC40FC872AC63D80133C64
+                            IVECO’dan ABC Lojistik’e 100 adet S WAY çekici
+                            %br/
+                        %p
+                        .post-action
+                          %a.btn.btn-primary{href: "https://www.iveco.com/turkey/basin-odasi/basin-bultenleri/Pages/IVECO-dan-ABC-Lojistik-e-100-adet-S-WAY-cekici.aspx", target: "_self"}
+                            %span.text DAHA FAZLASINI KEŞFEDİN
+                            %span.icon
+                              %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                    .post
+                      .post-image
+                        %img{alt: "", src: "https://www.iveco.com/turkey/PublishingImages/Home page widget/HPInformation/IVECO-Price-list_infoHP.jpg", title: "Price list"}/
+                      .post-content
+                        %span.category Fiyat Listesi
+                        %h3.post-title
+                          .ExternalClassC8B312A5C77B40CEA8196255C5459BE6
+                            %div
+                              %b
+                                %br/
+                            = succeed "\u{200b}\u{200b}\u{200b}\u{200b}" do
+                              %ul{style: "padding-left:16px;margin-top:-20px;"}
+                                %li{style: "margin-top:10px;margin-bottom:10px;"}
+                                  %strong{style: "margin-bottom:20px;pointer-events:none;"} ​​​​​​Tavsiye Edilen Fiyat Listesi​​​​​​
+                                  %br/
+                                  %a{href: "https://www.iveco.com/turkey/Documents/PriceList/Fiyat%20Listesi.pdf", style: "margin-top:10px;text-decoration:underline;", target: "_blank"} PDF​'ye giriş
+                                  %br/
+                                %br/
+                                %li
+                                  %strong{style: "pointer-events:none;"}> Kamu Araçları
+                                  ​ ​ ​
+                                  %br/
+                                  %a{href: "https://www.iveco.com/turkey/Documents/PriceList/Kamu%20Listesi.pdf", style: "margin-top:10px;text-decoration:underline;", target: "_blank"} PDF'ye giriş
+                            %br/
+                        %p
+                        .post-action
+                          %a.btn.btn-primary.pricelist-tr{href: "#", target: "_self"}
+                            %span.text
+                            %span.icon
+                              %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                    .post
+                      .post-image
+                        %img{alt: "", src: "https://www.iveco.com/turkey/PublishingImages/Home page widget/HPInformation/widget_dealer_locator_630x525.jpg", title: "Dealer locator"}/
+                      .post-content
+                        %span.category BAYİ VE SERVİS BUL
+                        %h3.post-title
+                        %p
+                        .post-action
+                          %a.btn.btn-primary{href: "/pages/dealer_locator.html?language=tr&country=turkey&brand=truck&position=HomePage", target: "_blank"}
+                            %span.text Arama
+                            %span.icon
+                              %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                    .post
+                      .post-image
+                        %img{alt: "", src: "https://www.iveco.com/turkey/PublishingImages/Home page widget/HPInformation/iveco_webbanner_promo2022_630x525.jpg", title: "Kampanyalar"}/
+                      .post-content
+                        %span.category IVECO Kampanyalar
+                        %h3.post-title
+                          .ExternalClass256120E5676A4D8FAC6A47BACBFB99A4
+                            IVECO’nun en güncel ticari araç kampanyaları ile; indirim, kredi ve faiz avantajlarını yakalayın.
+                            %br/
+                            Eğer bir IVECO sahibi iseniz, aracınız için en ideal satış sonrası hizmetlerden ve ayrıcalıklardan haberdar olun.
+                        %p
+                        .post-action
+                          %a.btn.btn-primary{href: "https://www.iveco.com/turkey/kampanyalar/Pages/HomePage.aspx", target: "_self"}
+                            %span.text DAHA FAZLASINI KEŞFEDİN
+                            %span.icon
+                              %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                    .post
+                      .post-image
+                        %img{alt: "", src: "https://www.iveco.com/turkey/PublishingImages/Home page widget/HPInformation/IVECO-Lubricants-TR_infoHP.jpg", title: "IVECO Lubricants"}/
+                      .post-content
+                        %span.category SATIŞ SONRASI HİZMETLER
+                        %h3.post-title
+                          .ExternalClass94F1E37C8CC04F0CAAFB22E8AE9740A1
+                            En Yüksek Performans İçin Tasarlanmış En Gelişmiş Madeni Yağlar.
+                            %br/
+                        %p
+                        .post-action
+                          %a.btn.btn-primary{href: "https://www.iveco.com/turkey/hizmetler/pages/lubricants.aspx", target: "_self"}
+                            %span.text DAHA FAZLASINI KEŞFEDİN
+                            %span.icon
+                              %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                    .post
+                      .post-image
+                        %img{alt: "", src: "https://www.iveco.com/turkey/PublishingImages/Home page widget/HPInformation/IVECO-Elements-TR_infoHP.jpg", title: "IVECO Elements"}/
+                      .post-content
+                        %span.category IVECO ELEMENTS
+                        %h3.post-title
+                          .ExternalClass39A23ABCDE914C699C0B986646328F2A
+                            Elements. Uzun Ömürlü Araçlar.​​
+                            %br/
+                        %p
+                        .post-action
+                          %a.btn.btn-primary{href: "https://www.iveco.com/turkey/hizmetler/pages/iveco-elements.aspx", target: "_self"}
+                            %span.text DAHA FAZLASINI KEŞFEDİN
+                            %span.icon
+                              %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right.png"}/
+                  .slider-arrow
+                    %span.icon{"data-page" => "slickPrev"}
+                      %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_left_grey.png"}/
+                    %span.icon{"data-page" => "slickNext"}
+                      %img{src: "/Common/StyleLibrary/RWDIveco/images/icons/arrow_right_grey.png"}/
