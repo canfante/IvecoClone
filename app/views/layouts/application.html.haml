@@ -1,8 +1,8 @@
 !!!
 %html
   %head
-    %meta{charset: "utf-8"}/
-    %meta{content: "IE=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{content: 'text/html; charset=UTF-8', 'http-equiv': 'x-ua-compatible'}/
+    -#%meta{content: "IE=edge", "http-equiv" => "x-ua-compatible"}/
 
     %title IVECO Turkey
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
@@ -26,9 +26,12 @@
       var enableExtendToTracking = false;
 
     = stylesheet_link_tag "application", "application.bootstrap", "common/styles", "common/adjustments", "common/bootstrap", "common/print", "common/reply", "Common/main", "Common/reply-home", "Common/slick-theme", "Common/slick", "data-turbo-track": "reload", media: 'all'
-    = javascript_include_tag "application", "data-turbo-track": "reload"
+    = javascript_include_tag "controllers/application", "utilities/custom", "utilities/main", "utilities/init", "utilities/plugins", "utilities/slick", "utilities/reply", "utilities/strings", "utilities/bootstrap.min", "utilities/ie55up", "utilities/initstrings", "utilities/ivecoCookieBot", "utilities/jquery.min", "utilities/JSLINQ", "utilities/modernizr", "utilities/pulltorefresh", "data-turbo-track": "reload", media: "all"
     = javascript_importmap_tags
     -# = javascript_include_tag :all
+
+    -#%script{src: "js/jquery.min.js", type: "module"}
+    -#%script{src: "js/bootstrap.min.js", type: "module"}
 
     = yield :additional_css
 
@@ -45,28 +48,27 @@
     = render 'layouts/header'
   %body
     = yield
-
-  = yield :additional_js
-
+    = yield :additional_js
+  = render 'layouts/footer'
   %script{src: "http://code.jquery.com/jquery-1.11.0.min.js"}
 
-  :javascript
-      function kvkk() {
-        $('.kvkk_info').fadeIn();
-      }
-
-  :javascript
-      $(document).ready(function() {$('#exit').click(function() {
-          $('.kvkk_info').fadeOut(400);
-        });
-      });
-
-  :javascript
-      $(document).ready(function(){
-      $('.first-level-menu > li:nth-child(2)').addClass('price-list');
-      });
-
-  :javascript
-      $(document).ready(function(){
-      $(".price-list > .sub-menu-wrap > .sub-menu-inner > .second-level-menu").append('<li><a href="http://www.iveco.comhttps://www.iveco.com/turkey/Documents/PriceList/Fiyat%20Listesi.pdf" target="_blank" rel="nofollow"><span>TAVSIYE EDILEN FIYAT LISTESI</span></a></li><li><a href="http://www.iveco.comhttps://www.iveco.com/turkey/Documents/PriceList/Kamu%20Listesi.pdf" target="_blank" rel="nofollow"><span>KAMU ARAÇLARI</span></a></li>');
-      });
+  -#:javascript
+  -#    function kvkk() {
+  -#      $('.kvkk_info').fadeIn();
+  -#    }
+  -#
+  -#:javascript
+  -#    $(document).ready(function() {$('#exit').click(function() {
+  -#        $('.kvkk_info').fadeOut(400);
+  -#      });
+  -#    });
+  -#
+  -#:javascript
+  -#    $(document).ready(function(){
+  -#    $('.first-level-menu > li:nth-child(2)').addClass('price-list');
+  -#    });
+  -#
+  -#:javascript
+  -#    $(document).ready(function(){
+  -#    $(".price-list > .sub-menu-wrap > .sub-menu-inner > .second-level-menu").append('<li><a href="http://www.iveco.comhttps://www.iveco.com/turkey/Documents/PriceList/Fiyat%20Listesi.pdf" target="_blank" rel="nofollow"><span>TAVSIYE EDILEN FIYAT LISTESI</span></a></li><li><a href="http://www.iveco.comhttps://www.iveco.com/turkey/Documents/PriceList/Kamu%20Listesi.pdf" target="_blank" rel="nofollow"><span>KAMU ARAÇLARI</span></a></li>');
+  -#    });

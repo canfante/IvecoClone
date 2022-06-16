@@ -1,3 +1,5 @@
+//= require jquery
+
 var iveco = {
   sel : {
     homepage : '[data-page="homepage]'

@@ -12,8 +12,10 @@ module IvecoClone
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.assets.paths << Rails.root.join("app", "assets", "flash")
 
     config.generators.jbuilder = false
+
     config.generators.scaffold_stylesheet false
     config.generators do |g|
       g.test_framework  nil #to skip test framework

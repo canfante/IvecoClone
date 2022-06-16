@@ -1949,9 +1949,9 @@ input[type="search"] {
 
 @font-face {
     font-family: "GillSans";
-    src: url("../fonts/gillsans.eot");
-    src: url("../fonts/gillsans.eot?#iefix") format("embedded-opentype"), url("../fonts/gillsans.woff") format("woff"),
-    url("../fonts/gillsans.ttf") format("truetype"), url("../fonts/gillsans.svg#gillsans") format("svg");
+    src: url("GillSansC.eot");
+    src: url("GillSansC.eot") format("embedded-opentype"), url("GillSansC.woff") format("woff"),
+    url("GillSansC.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -1959,7 +1959,7 @@ input[type="search"] {
 /* Webfont: Gill Sans semibold */
 @font-face {
     font-family: "GillSans";
-    src: url("../fonts/GillSans-SemiBold.woff2") format("woff2"), url("../fonts/GillSans-SemiBold.woff") format("woff");
+    src: url("GillSansC.woff2") format("woff2"), url("GillSansC.woff") format("woff");
     /* Pretty Modern Browsers */
     font-weight: 600;
     font-style: normal;
@@ -1969,7 +1969,7 @@ input[type="search"] {
 /* Webfont: Gill Sans light */
 @font-face {
     font-family: "GillSans";
-    src: url("../fonts/GillSans-Light.woff") format("woff");
+    src: url("GillSansLightC.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     text-rendering: optimizeLegibility;
@@ -1978,7 +1978,7 @@ input[type="search"] {
 /* Webfont: Gill Sans bold */
 @font-face {
     font-family: "GillSans";
-    src: url("../fonts/gillsans_bold.woff") format("woff");
+    src: url("GillSansC-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     text-rendering: optimizeLegibility;
@@ -1987,11 +1987,11 @@ input[type="search"] {
 /* deprecated: use 'GillSans' and font-weight 700, instead; kept only for legacy reasons */
 @font-face {
     font-family: "GillSansBold";
-    src: url("../fonts/gillsans_bold.eot");
+    src: url("GillSansC-Bold.eot");
     /* IE9 Compat Modes */
-    src: url("../fonts/gillsans_bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/gillsans_bold.woff") format("woff"), url("../fonts/gillsans_bold.ttf") format("truetype"),
-    url("../fonts/gillsans_bold.svg#70ec455eb9d6e89365c61d8ea933b159") format("svg");
+    src: url("GillSansC-Bold.eot?#iefix") format("embedded-opentype"),
+    url("GillSansC-Bold.woff") format("woff"), url("GillSansC-Bold.ttf") format("truetype"),
+    url("GillSansC-Bold.svg#70ec455eb9d6e89365c61d8ea933b159") format("svg");
     /* Legacy iOS */
     font-weight: 700;
     font-style: normal;
@@ -3041,8 +3041,8 @@ th {
 }
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    src: url('glyphicons-halflings-regular.eot');
+    src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons-halflings-regular.woff2') format('woff2'), url('glyphicons-halflings-regular.woff') format('woff'), url('glyphicons-halflings-regular.ttf') format('truetype'), url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
     position: relative;
@@ -10645,15 +10645,15 @@ form pop up
 \*------------------------------------*/
 @font-face {
     font-family: 'GillSans';
-    src: url('../fonts/gillsans.eot');
-    src: url('../fonts/gillsans.eot?#iefix') format('embedded-opentype'), url('../fonts/gillsans.woff') format('woff'), url('../fonts/gillsans.ttf') format('truetype'), url('../fonts/gillsans.svg#gillsans') format('svg');
+    src: url('GillSansC.eot');
+    src: url('GillSansC.eot?#iefix') format('embedded-opentype'), url('GillSansC.woff') format('woff'), url('GillSansC.ttf') format('truetype'), url('GillSansC.svg#gillsans') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 /* Webfont: Gill Sans semibold */
 @font-face {
     font-family: 'GillSans';
-    src: url('../fonts/GillSans-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/GillSans-SemiBold.woff') format('woff');
+    src: url('GillSansC.woff2') format('woff2'), /* Super Modern Browsers */ url('GillSansC.woff') format('woff');
     /* Pretty Modern Browsers */
     font-weight: 600;
     font-style: normal;
@@ -10662,7 +10662,7 @@ form pop up
 /* Webfont: Gill Sans light */
 @font-face {
     font-family: 'GillSans';
-    src: url('../fonts/GillSans-Light.woff') format('woff');
+    src: url('GillSansLightC.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     text-rendering: optimizeLegibility;
@@ -10670,7 +10670,7 @@ form pop up
 /* Webfont: Gill Sans bold */
 @font-face {
     font-family: 'GillSans';
-    src: url('../fonts/gillsans_bold.woff') format('woff');
+    src: url('GillSansC-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     text-rendering: optimizeLegibility;
@@ -10678,9 +10678,9 @@ form pop up
 /* deprecated: use 'GillSans' and font-weight 700, instead; kept only for legacy reasons */
 @font-face {
     font-family: 'GillSansBold';
-    src: url('../fonts/gillsans_bold.eot');
+    src: url('GillSansC-Bold.eot');
     /* IE9 Compat Modes */
-    src: url('../fonts/gillsans_bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/gillsans_bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/gillsans_bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/gillsans_bold.svg#70ec455eb9d6e89365c61d8ea933b159') format('svg');
+    src: url('GillSansC-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('GillSansC-Bold.woff') format('woff'), /* Modern Browsers */ url('GillSansC-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('GillSansC-Bold.svg#70ec455eb9d6e89365c61d8ea933b159') format('svg');
     /* Legacy iOS */
     font-weight: 700;
     font-style: normal;
@@ -11860,7 +11860,7 @@ fieldset[disabled] .btn {
         width: 9px;
         height: 5px;
         content: "";
-        background-image: url("../images/select-small-down-grey.png");
+        /*background-image: url("../images/select-small-down-grey.png");*/
         background-repeat: no-repeat;
         position: absolute;
         top: 17px;
@@ -11887,7 +11887,7 @@ fieldset[disabled] .btn {
     }
     .main-header__tools-navigation nav ul li.has-sub-menu:hover > a:before {
         top: 16px;
-        background-image: url("../images/select-small-up-grey.png");
+        /*background-image: url("../images/select-small-up-grey.png");*/
     }
     .main-header__tools-navigation nav ul li.has-sub-menu:hover a {
         color: #333333;

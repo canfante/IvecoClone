@@ -1,3 +1,5 @@
+//= require jquery
+
 if (typeof IVECO === "undefined") {
 
 	var IVECO = {};

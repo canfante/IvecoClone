@@ -1,5 +1,5 @@
-import { Application } from "@hotwired/stimulus"
-
+const { Application } = require("@hotwired/stimulus")
+//= require jquery
 
 const application = Application.start()
 
@@ -13,9 +13,21 @@ $(document).ready(function (){
     hello();
     main_page_functions();
     isMobile();
-    InitPullToRefresh();
+    kvkk();
+
+    $('#exit').click(function() {
+        $('.kvkk_info').fadeOut(400);
+    });
+
+    $('.first-level-menu > li:nth-child(2)').addClass('price-list');
+
+    $(".price-list > .sub-menu-wrap > .sub-menu-inner > .second-level-menu").append('<li><a href="http://www.iveco.com/turkey/Documents/PriceList/Fiyat%20Listesi.pdf" target="_blank" rel="nofollow"><span>TAVSIYE EDILEN FIYAT LISTESI</span></a></li><li><a href="http://www.iveco.com/turkey/Documents/PriceList/Kamu%20Listesi.pdf" target="_blank" rel="nofollow"><span>KAMU ARAÇLARI</span></a></li>');
+
 })
 
+function kvkk() {
+    $('.kvkk_info').fadeIn();
+}
 
 function main_page_functions(){
     //<![CDATA[

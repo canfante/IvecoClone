@@ -1,8 +1,8 @@
 %header.main-header.navbar.navbar-default
   .main-header__logo.navbar-header
     .container
-      .main-header__logo-inner.logo-inner-home
-        = image_tag("logo_iveco", title: "Iveco")
+      .main-header__logo-inner.logo-inner-home.border
+        = image_tag("logo_iveco", title: "Iveco", class: 'me-auto ms-0')
       %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-header__interaction-area", "data-toggle" => "collapse", type: "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar.top-bar
@@ -25,25 +25,6 @@
         .main-header__tools-navigation.main-nav.noindex
           %nav
             %ul.first-level-menu
-              %li.has-sub-menu
-                %a{href: "javascript:void(0)"} KONFIGÜRATÖR
-                .sub-menu-wrap
-                  .sub-menu-inner
-                    %ul.second-level-menu
-                      %li
-                        %a{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=Daily"}
-                          %span New Daily
-                      %li
-                        %a{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=Eurocargo"}
-                          %span Eurocargo
-                      %li
-                        %a{href: "https://www.iveco.com/turkey/Pages/ConfiguratorPage.aspx?vehicle=S-Way"}
-                          %span IVECO S-Way
-              %li.has-sub-menu
-                %a{href: "javascript:void(0)"} FIYAT LISTESI
-                .sub-menu-wrap
-                  .sub-menu-inner
-                    %ul.second-level-menu
               %li
                 %a{href: "https://www.iveco.com/turkey/kampanyalar/Pages/HomePage.aspx", target: "_self"} KAMPANYALAR
               %li

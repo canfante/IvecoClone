@@ -502,15 +502,15 @@
 \*------------------------------------*/
 @font-face {
   font-family: 'GillSans';
-  src: url('../fonts/gillsans.eot');
-  src: url('../fonts/gillsans.eot?#iefix') format('embedded-opentype'), url('../fonts/gillsans.woff') format('woff'), url('../fonts/gillsans.ttf') format('truetype'), url('../fonts/gillsans.svg#gillsans') format('svg');
+  src: url('GillSansC.eot');
+  src: url('GillSansC.eot?#iefix') format('embedded-opentype'), url('GillSansC.woff') format('woff'), url('GillSansC.ttf') format('truetype'), url('GillSansC.svg#gillsans') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 /* Webfont: Gill Sans semibold */
 @font-face {
   font-family: 'GillSans';
-  src: url('../fonts/GillSans-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/GillSans-SemiBold.woff') format('woff');
+  src: url('GillSansCondC.woff2') format('woff2'), /* Super Modern Browsers */ url('GillSansCondC.woff') format('woff');
   /* Pretty Modern Browsers */
   font-weight: 600;
   font-style: normal;
@@ -519,7 +519,7 @@
 /* Webfont: Gill Sans light */
 @font-face {
   font-family: 'GillSans';
-  src: url('../fonts/GillSans-Light.woff') format('woff');
+  src: url('GillSansLightC.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -527,7 +527,7 @@
 /* Webfont: Gill Sans bold */
 @font-face {
   font-family: 'GillSans';
-  src: url('../fonts/gillsans_bold.woff') format('woff');
+  src: url('GillSansC-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -535,9 +535,9 @@
 /* deprecated: use 'GillSans' and font-weight 700, instead; kept only for legacy reasons */
 @font-face {
   font-family: 'GillSansBold';
-  src: url('../fonts/gillsans_bold.eot');
+  src: url('GillSansC-Bold.eot');
   /* IE9 Compat Modes */
-  src: url('../fonts/gillsans_bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/gillsans_bold.woff') format('woff'), /* Modern Browsers */ url('../fonts/gillsans_bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/gillsans_bold.svg#70ec455eb9d6e89365c61d8ea933b159') format('svg');
+  src: url('GillSansC-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('GillSansC-Bold.woff') format('woff'), /* Modern Browsers */ url('GillSansC-Bold.ttf') format('truetype'), /* Safari, Android, iOS */ url('GillSansC-Bold.svg#70ec455eb9d6e89365c61d8ea933b159') format('svg');
   /* Legacy iOS */
   font-weight: 700;
   font-style: normal;
